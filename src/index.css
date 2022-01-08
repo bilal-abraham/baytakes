@@ -1,8 +1,11 @@
-/* :root {
-	--bg: #080808;
-	--bg-accent: #111111;
-	--color: #f3f3f3;
-	--color-accent: #009900;
+:root {
+	--bg: #292929;
+	--bg-accent: #5c5c5c;
+	--text: #e7e1e1;
+	--color: #046abc;
+	--color-accent: #1594da;
+	--alt: #f7294f;
+	--alt-accent: #fecc51;
 	--nav-size: 10vh;
 	--main-size: 79.8vh;
 	--footer-size: 10vh;
@@ -13,11 +16,11 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: var(--bg-accent);
-	font-family: 'Source Code Pro', monospace;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: black;
+	color: var(--text);
 	overflow-x: hidden;
 }
 
@@ -25,4 +28,4 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-} */
+}

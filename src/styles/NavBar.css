@@ -1,0 +1,6 @@
+.navbar-container {
+	background-color: var(--bg);
+	color: var(--color);
+	height: var(--nav-size);
+	border-bottom: 0.5px solid var(--color);
+}

@@ -1,0 +1,6 @@
+.footer-container {
+	background-color: var(--bg);
+	color: var(--color);
+	height: var(--footer-size);
+	border-top: 0.5px solid var(--color);
+}
