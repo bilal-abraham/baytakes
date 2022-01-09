@@ -4,7 +4,7 @@ import '../styles/Footer.css';
 const Footer = () => {
 	return (
 		<Fragment>
-			<footer className='footer-container'></footer>
+			<footer className='footer_container'></footer>
 		</Fragment>
 	);
 };

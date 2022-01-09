@@ -1,6 +1,81 @@
-.navbar-container {
-	background-color: var(--bg);
+.navbar_container {
 	color: var(--color);
 	height: var(--nav-size);
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
 	border-bottom: 0.5px solid var(--color);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	background-color: rgba(41, 41, 41, 0.5);
+}
+
+.navbar_logo_section {
+	margin: auto 0 auto 5vw;
+	color: var(--text-color);
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar_header {
+	font-size: 1.2rem;
+	margin: auto 0 auto 0;
+	padding-left: 1rem;
+}
+
+.navbar_logo {
+	height: 5vh;
+	border-radius: 50%;
+}
+
+.navbar_links {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 5vw;
+	max-width: 100%;
+}
+
+.navbar_element {
+	padding: 0.5rem 1rem 0.3rem 1rem;
+}
+.navbar_element:hover {
+	cursor: pointer;
+	filter: brightness(150%);
+}
+
+.navbar_element:after,
+.navbar_element:before {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	transition: all 300ms ease;
+	transition: all 300ms ease-in;
+}
+
+.navbar_element:after {
+	bottom: 100%;
+	left: 0;
+}
+
+.navbar_element:before {
+	top: 100%;
+	right: 0;
+}
+
+.navbar_element:hover::after {
+	width: 100%;
+	bottom: 100%;
+	background-color: var(--color);
+}
+.navbar_element:hover::before {
+	width: 100%;
+	top: 100%;
+	background-color: var(--color);
+}
+
+.navbar_link {
+	text-decoration: none;
+	color: var(--text);
 }

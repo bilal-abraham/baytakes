@@ -1,6 +1,8 @@
-.footer-container {
-	background-color: var(--bg);
+.footer_container {
 	color: var(--color);
 	height: var(--footer-size);
 	border-top: 0.5px solid var(--color);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(41, 41, 41, 0.5);
 }
