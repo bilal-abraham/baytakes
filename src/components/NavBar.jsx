@@ -8,8 +8,10 @@ const NavBar = () => {
 		<Fragment>
 			<nav className='navbar_container'>
 				<section className='navbar_logo_section'>
-					<img className='navbar_logo' src={Logo} alt='Bay Takes Logo' />
-					<header className='navbar_header'>Bay Takes</header>
+					<Link className='navbar_logo_section_link_wrapper' to='/'>
+						<img className='navbar_logo' src={Logo} alt='Bay Takes Logo' />
+						<header className='navbar_header'>Bay Takes</header>
+					</Link>
 				</section>
 				<ul className='navbar_links'>
 					<li className='navbar_element'>

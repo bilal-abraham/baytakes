@@ -1,20 +1,22 @@
 .navbar_container {
-	color: var(--color);
+	color: var(--text);
 	height: var(--nav-size);
 	display: flex;
 	justify-content: space-between;
 	font-size: 1rem;
 	border-bottom: 0.5px solid var(--color);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	background-color: rgba(41, 41, 41, 0.5);
+	background-color: var(--bg);
 }
 
 .navbar_logo_section {
 	margin: auto 0 auto 5vw;
-	color: var(--text-color);
+}
+
+.navbar_logo_section_link_wrapper {
 	display: flex;
 	flex-direction: row;
+	color: var(--text);
+	text-decoration: none;
 }
 
 .navbar_header {
@@ -24,7 +26,8 @@
 }
 
 .navbar_logo {
-	height: 5vh;
+	height: 6vh;
+	border: 2px solid var(--color);
 	border-radius: 50%;
 }
 
