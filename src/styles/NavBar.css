@@ -27,8 +27,24 @@
 
 .navbar_logo {
 	height: 6vh;
-	border: 2px solid var(--color);
-	border-radius: 50%;
+	border: 2px solid var(--text);
+	border-radius: 30%;
+}
+
+.navbar_logo:hover {
+	animation: hoverLogo 1500ms infinite ease-in-out;
+}
+
+@keyframes hoverLogo {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1vh);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .navbar_links {
@@ -81,4 +97,23 @@
 .navbar_link {
 	text-decoration: none;
 	color: var(--text);
+}
+
+.navbar_dropdown {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 5vw;
+	max-width: 100%;
+	font-size: 1.7rem;
+	color: var(--text);
+}
+
+.navbar_dropdown_btn {
+	transition: all 500ms ease-in;
+}
+
+.navbar_dropdown_btn:hover {
+	cursor: pointer;
+	filter: brightness(150%);
 }
