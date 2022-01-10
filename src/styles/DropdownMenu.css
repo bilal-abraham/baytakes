@@ -1,0 +1,26 @@
+.dropdown_container {
+	position: absolute;
+	z-index: 1;
+	top: var(--nav-size);
+	width: 99vw;
+	background-color: var(--bg);
+	border: 2px solid var(--color);
+	border-radius: 10px;
+	text-align: center;
+	transition: height 1s ease;
+}
+
+.dropdown_menu_item {
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+	color: var(--text);
+	text-decoration: none;
+	padding: 1rem;
+	transition: all 300ms ease-in;
+}
+
+.dropdown_menu_item:hover {
+	background-color: #525357;
+}

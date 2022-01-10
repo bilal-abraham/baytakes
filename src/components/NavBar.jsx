@@ -1,10 +1,12 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import DropdownMenu from './DropdownMenu';
 import Logo from '../img/logo.png';
 import '../styles/NavBar.css';
 
 const NavBar = () => {
-	const [isMobile, setIsMobile] = useState(false);
+	const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+	const [showDropdown, setShowDropdown] = useState(false);
 	useEffect(() => {
 		window.addEventListener('resize', () => {
 			if (window.innerWidth <= 600) {
@@ -14,6 +16,20 @@ const NavBar = () => {
 			}
 		});
 	});
+	const DropDownMenuList = [
+		{
+			title: 'Home',
+			route: '/',
+		},
+		{
+			name: 'About',
+			logo: '/about',
+		},
+		{
+			name: 'Links',
+			logo: '/links',
+		},
+	];
 	return (
 		<Fragment>
 			<nav className='navbar_container'>
@@ -45,11 +61,14 @@ const NavBar = () => {
 				{isMobile && (
 					<section className='navbar_dropdown'>
 						<i
-							className='navbar_dropdown_btn far fa-caret-square-down'
-							onClick={() => {}}
+							className='navbar_dropdown_btn fas fa-bars'
+							onClick={() => {
+								setShowDropdown(!showDropdown);
+							}}
 						/>
 					</section>
 				)}
+				{showDropdown && <DropdownMenu itemslist={DropDownMenuList} />}
 			</nav>
 		</Fragment>
 	);
