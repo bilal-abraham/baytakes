@@ -53,11 +53,17 @@
 	align-items: center;
 	padding-right: 5vw;
 	max-width: 100%;
+	max-height: 100%;
 }
 
 .navbar_element {
+	padding: 0.5rem 0 0.3rem 0;
+}
+
+.navbar_link {
 	padding: 0.5rem 1rem 0.3rem 1rem;
 }
+
 .navbar_element:hover {
 	cursor: pointer;
 	filter: brightness(150%);
@@ -73,24 +79,25 @@
 	transition: all 300ms ease-in;
 }
 
-.navbar_element:after {
-	bottom: 100%;
-	left: 0;
-}
-
 .navbar_element:before {
 	top: 100%;
 	right: 0;
 }
 
-.navbar_element:hover::after {
-	width: 100%;
+.navbar_element:after {
 	bottom: 100%;
-	background-color: var(--color);
+	left: 0;
 }
+
 .navbar_element:hover::before {
 	width: 100%;
 	top: 100%;
+	background-color: var(--color);
+}
+
+.navbar_element:hover::after {
+	width: 100%;
+	bottom: 100%;
 	background-color: var(--color);
 }
 

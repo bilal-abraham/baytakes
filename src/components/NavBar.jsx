@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DropdownMenu from './DropdownMenu';
+import MobileMenu from './MobileMenu';
 import Logo from '../img/logo.png';
 import '../styles/NavBar.css';
 
@@ -16,20 +16,6 @@ const NavBar = () => {
 			}
 		});
 	});
-	const DropDownMenuList = [
-		{
-			title: 'Home',
-			route: '/',
-		},
-		{
-			name: 'About',
-			logo: '/about',
-		},
-		{
-			name: 'Links',
-			logo: '/links',
-		},
-	];
 	return (
 		<Fragment>
 			<nav className='navbar_container'>
@@ -68,7 +54,7 @@ const NavBar = () => {
 						/>
 					</section>
 				)}
-				{showDropdown && <DropdownMenu itemslist={DropDownMenuList} />}
+				{showDropdown && <MobileMenu />}
 			</nav>
 		</Fragment>
 	);
