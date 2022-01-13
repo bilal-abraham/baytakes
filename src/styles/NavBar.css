@@ -68,9 +68,8 @@
 	cursor: pointer;
 	filter: brightness(150%);
 }
-
-.navbar_element:after,
-.navbar_element:before {
+.navbar_element:before,
+.navbar_element:after {
 	content: '';
 	position: absolute;
 	width: 0%;

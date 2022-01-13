@@ -4,7 +4,9 @@ import '../styles/HomeMain.css';
 const HomeMain = () => {
 	return (
 		<Fragment>
-			<main className='homemain_container'></main>
+			<main className='homemain_container'>
+				<h1>Home</h1>
+			</main>
 		</Fragment>
 	);
 };
